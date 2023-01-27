@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+  <h1 class="total"></h1>
+    <form id="accountForm"> 
+        
+         <h1 for="account-name">Create Account</h1>
+           
+    
+        <label for="account-name">Account Name:</label>
+        <input type="text" id="account-name" name="account-number" required><br>
+
+
+        
+        <label for="routing-number">Amount:</label>
+        <input type="text" id="amount" name="routing-number"><br>
+        
+        <label for="account-number">Account Number:</label>
+        <div id="app"></div>
+        <br>
+        <!-- <input type="text" id="account-number" name="account-number" required><br> -->
+      
+        
+        <input type="submit" value="Submit">
+      </form>
+
+
+      <form id="deposite">
+        <h1 for="account-name">Deposite Account</h1>
+        
+        <label for="account-number">Account Number:</label>
+        <input type="text" id="de-number" name="account-number" required><br>
+        
+        <label for="routing-number">Amount:</label>
+        <input type="text" id="de-amount" name="routing-number"><br>
+
+        <input type="submit" value="Submit">
+
+      </form>
+
+      <form id="withdraw">
+        <h1 for="account-name">Withdraw Account</h1>
+
+        <label for="account-number">Account Number:</label>
+        <input type="text" id="wi-number" name="account-number" required><br>
+        
+        <label for="routing-number">Amount:</label>
+        <input type="text" id="wi-amount" name="routing-number"><br>
+
+        <input type="submit" value="Submit">
+      </form>
+      
+      <script src="bank.js"></script>
+</body>
+</html>

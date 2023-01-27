@@ -1,0 +1,38 @@
+label {
+    font-weight: bold;
+  }
+
+  form{
+     border: 5px solid black;
+     width: 50%;
+     margin: auto;
+     text-align: center;
+     padding: 10px 10px;
+
+     margin-bottom: 5px ;
+     border-radius:  18px;
+  }
+  
+  input[type="text"] {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    width: 300px;
+  }
+  
+  select {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    width: 300px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .total h4{
+    text-align: center;
+  }
