@@ -1,5 +1,5 @@
 let total = document.querySelector('.total');
-
+let accounts = [];
 function BankAccount(userName,balance) {
 
     this.userName = userName,
@@ -7,7 +7,13 @@ function BankAccount(userName,balance) {
     this.balance = +balance,
 
     this.deposite = function(amount){
-        this.balance = balance+amount;
+        if(amount<0){
+            alert("Enter the positive number")
+        }
+        else{
+
+            this.balance = balance+amount;
+        }
     },
     
     this.withdraw = function(amount){
@@ -16,7 +22,13 @@ function BankAccount(userName,balance) {
             alert("Not Enough Balance")
         }
         else{
-            this.balance -= amount;
+            if(+balance<0){
+               alert("Not Enough Balance")
+            }
+            else{
+                
+                 this.balance = balance - +amount ;
+            }
 
         }
   
@@ -39,7 +51,7 @@ const withdraw = document.getElementById("withdraw");
 const wi_number  = document.getElementById("wi-number");
 const wi_amount = document.getElementById("wi-amount");
 
-let accounts = [];
+
 
 var cartVal = document.createElement("h4");
 
@@ -98,9 +110,9 @@ withdraw.addEventListener("submit",(e)=>{
     total = document.querySelector('.total');
 //    total.append(`Total balance :- ${account.balance}`)
      cartVal.innerText = "Total:- ₹ " +  account.balance;
-    //    accounts.push(account);
-    // total = account.balance;
-   console.log(accounts); 
+       accounts.push(account);
+  
+   console.log(typeof account.balance); 
 
 })
 
